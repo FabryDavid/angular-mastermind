@@ -1,0 +1,28 @@
+<div class="mb-2">Colors:</div>
+
+<div class="row">
+  <div class="col-3">
+    <div (click)="selectColor(colorOptions.YELLOW)" [class.opacity-100]="selectedColor===colorOptions.YELLOW"
+         class="color-option">
+      <div [style]="'background-color: '+colorOptions.YELLOW" class="hover-inside"></div>
+    </div>
+  </div>
+  <div class="col-3">
+    <div (click)="selectColor(colorOptions.ORANGE)" [class.opacity-100]="selectedColor===colorOptions.ORANGE"
+         class="color-option">
+      <div [style]="'background-color: '+colorOptions.ORANGE" class="hover-inside"></div>
+    </div>
+  </div>
+  <div class="col-3">
+    <div (click)="selectColor(colorOptions.PINK)" [class.opacity-100]="selectedColor===colorOptions.PINK"
+         class="color-option">
+      <div [style]="'background-color: '+colorOptions.PINK" class="hover-inside"></div>
+    </div>
+  </div>
+  <div class="col-3">
+    <div (click)="selectColor(colorOptions.BLUE)" [class.opacity-100]="selectedColor===colorOptions.BLUE"
+         class="color-option">
+      <div [style]="'background-color: '+colorOptions.BLUE" class="hover-inside"></div>
+    </div>
+  </div>
+</div>

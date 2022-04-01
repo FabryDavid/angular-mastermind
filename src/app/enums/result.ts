@@ -1,0 +1,5 @@
+export enum Result {
+  CORRECT_COLOR,
+  CORRECT_POSITION,
+  INCORRECT
+}

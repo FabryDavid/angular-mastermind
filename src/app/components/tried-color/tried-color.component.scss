@@ -1,0 +1,18 @@
+.tried-color,
+.result-display {
+  width: 100%;
+  aspect-ratio: 1/1;
+}
+
+.result-display {
+  background-color: rgba(0, 0, 0, 0.25);
+  border-radius: 50%;
+}
+
+.result-display-position {
+  background-color: black !important;
+}
+
+.result-display-color {
+  background-color: white !important;
+}

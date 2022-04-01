@@ -1,1 +1,65 @@
 /* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/dist/css/bootstrap.min.css';
+@import "assets/fonts/fonts";
+@import "variables";
+@import "mixins";
+
+body {
+  background-color: #e6e6ef;
+  color: $text-color;
+  font-family: $anton-font;
+  letter-spacing: 1px;
+}
+
+.color-option,
+.color-select {
+  @include hover-effect;
+  width: 100%;
+  aspect-ratio: 1/1;
+}
+
+.color-option {
+  opacity: 0.5;
+  transition: all 0.3s ease-out;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.option-selected {
+  border: 5px solid $text-color;
+}
+
+.button,
+.button-secondary {
+  @include hover-effect;
+
+  .hover-inside {
+    letter-spacing: 2px;
+    outline: none;
+    padding: 7px 25px;
+    border: 2px solid;
+  }
+}
+
+.button {
+  .hover-inside {
+    background-color: $purple;
+    color: white;
+    border-color: white;
+  }
+}
+
+.button-secondary {
+  .hover-inside {
+    background-color: white;
+    color: $purple;
+    border-color: $purple;
+  }
+}
+
+.button-disabled {
+  pointer-events: none;
+  opacity: 0.5;
+}
